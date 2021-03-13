@@ -21,15 +21,15 @@ The order of the arguments in which they are passed doesnot really matter much.
 If the interface and .pcap file both are mentioned, as of now the priority will be given to the .pcap file first. 
 
 Funtions and what they return:
-main(): this funtion is the driving code of the file
-readpackets(): this function is used to read the packets from the .pcap file specified in the argument. It then calls handlePacket funtion which fetches the content at every layer.
-livetraffic(): this function is used to read the packets by monitoring the live packets. It then calls handlePacket() function which fetches the content at every layer.
-handlePacket(): it basically calls the function dedicated for each layer. 
+1. main(): this funtion is the driving code of the file
+2. readpackets(): this function is used to read the packets from the .pcap file specified in the argument. It then calls handlePacket funtion which fetches the content at every layer.
+3. livetraffic(): this function is used to read the packets by monitoring the live packets. It then calls handlePacket() function which fetches the content at every layer.
+4. handlePacket(): it basically calls the function dedicated for each layer. 
 
-ethernetlayer(): returns the source and destination MAC addresses along with the ethernet type.
-ipv4layer(): basically returns the source and destination IP address and ip protocol for both the IPv4 and IPv6 protocol.
-tcplayer(): returns the source and destination ports for both the TCP and UDP layer along with the flags for TCP layer.
-applayer(): basically returns the payload of the ethernet layer. and checks if the string is present in the payload. 
+5. ethernetlayer(): returns the source and destination MAC addresses along with the ethernet type.
+6. ipv4layer(): basically returns the source and destination IP address and ip protocol for both the IPv4 and IPv6 protocol.
+7. tcplayer(): returns the source and destination ports for both the TCP and UDP layer along with the flags for TCP layer.
+8. applayer(): basically returns the payload of the ethernet layer. and checks if the string is present in the payload. 
 
 Note: Use SUDO to avoid any permission related errors.
 
