@@ -36,8 +36,10 @@ Note: Use SUDO to avoid any permission related errors.
 Sample examples:
 
 1. sudo go run mydump.go
+
 Answer:
 Args: [/tmp/go-build814257484/b001/exe/mydump]
+
 
 2021-03-12 19:52:02.711505 00:15:5d:99:a2:72 -> 00:15:5d:44:45:d2 type 0x800 len 60
 172.27.228.239:42529 -> 172.27.224.1:50989 TCP ACK PSH
@@ -53,7 +55,9 @@ Args: [/tmp/go-build814257484/b001/exe/mydump]
 00000020  50 10 20 10 d4 8c 00 00                           |P. .....|
 
 2. sudo go run mydump.go -r "hw1.pcap"
+
 Answer:
+
 2013-01-12 12:03:24.675522 44:6d:57:f6:7e:00 -> ff:ff:ff:ff:ff:ff type 0x800 len 92
 192.168.0.11:137(netbios-ns) -> 192.168.0.255:137(netbios-ns) UDP
 00000000  45 00 00 4e 73 ba 00 00  80 11 44 8a c0 a8 00 0b  |E..Ns.....D.....|
@@ -141,7 +145,6 @@ Answer:
 00000010  c0 a8 00 c8 00 50 d5 6a  d2 4f ff 3f 82 64 41 39  |.....P.j.O.?.dA9|
 00000020  a0 12 38 90 a0 cb 00 00  02 04 05 b4 04 02 08 0a  |..8.............|
 00000030  e0 a5 2a 45 02 24 7e 60  01 03 03 08              |..*E.$~`....|
-
 
 2013-01-14 02:52:52.19283  00:0c:29:e9:94:8e -> c4:3d:c7:17:6f:9b type 0x800 len 66
 192.168.0.200:54634 -> 91.189.91.14:80(http) TCP ACK
